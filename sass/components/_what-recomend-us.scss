@@ -1,0 +1,41 @@
+.about {
+  padding-bottom: 0;
+
+  &__container {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__title {
+    font-weight: $secondary-font-weight;
+    font-size: $secondary-font-size;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 270px;
+    height: 120px;
+    background-color: $main-accent-color;
+    border-radius: 4px;
+  }
+
+  &__text {
+    font-weight: $main-font-weight;
+    font-size: $secondary-font-size;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $secondary-color;
+  }
+}

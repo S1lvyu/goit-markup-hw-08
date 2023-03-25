@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-Web Studio Homework Project</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <!--HeaderSection-->
+   <header class="container page-header">
+      <div class="container page-header__container">
+        <div>
+          <a class="logo" href="#"
+            ><span class="logo__section">Web</span>Studio</a
+          >
+        </div>
+        <nav class="navigation-bar menu">
+          <ul class="navigation-bar__left-container unstyled-list">
+            <li class="navigation-bar__left-item">
+              <a
+                class="navigation-bar__item "
+                href="index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="navigation-bar__left-item">
+              <a class="navigation-bar__item navigation-bar--active-link" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="navigation-bar__left-item">
+              <a class="navigation-bar__item" href="contacts.html">Contacts</a>
+            </li>
+          </ul>
+          <ul class="navigation-bar__right-container unstyled-list">
+            <li class="navigation-bar__right-item">
+              <a class="navigation-bar__item navigation-bar__item--right-color" href="mailto:info@devstudio.com">
+                <svg class="navigation-bar__icon" width="16px" height="12px">
+                  <use href="./images/icons.svg.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="navigation-bar__right-item">
+              <a class="navigation-bar__item navigation-bar__item--right-color" href="tel:+12127724150">
+                <svg class="navigation-bar__icon" width="10px" height="16px">
+                  <use href="./images/icons.svg.svg#icon-smartphone"></use>
+                </svg>
+                +1 212-772-4150</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg.svg#mobile-icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+     <!--mobile-menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu mobile-close">
+        <svg width="19" height="19" class="mobile-close__icon">
+         <use href="./images/icons.svg.svg#mobile-icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu unstyled-list">
+        <li class="mobile-menu__item"><a href="index.html" class="mobile-menu__link">Studio</a></li>
+        <li class="mobile-menu__item"><a href="portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Contacts</a></li>        
+      </ul>
+      <ul class="mobile-contacts unstyled-list">
+        <li class="mobile-contacts__item"><a class="mobile-contacts__link" href="tel:+12127724150">+1 212-772-4150</a></li>
+        <li class="mobile-contacts__item mobile-contacts--item-modifier"><a class="mobile-contacts__link mobile-contacts--link-modifier" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+
+      <ul class="mobile-social-media unstyled-list">
+        <li class="mobile-social-media__item"><a class="mobile-social-media__link" href="#">Instagram</a></li>
+        <li class="mobile-social-media__item"><a class="mobile-social-media__link" href="#">Twitter</a></li>
+        <li class="mobile-social-media__item"><a class="mobile-social-media__link" href="#">Facebook</a></li>
+        <li class="mobile-social-media__item"><a class="mobile-social-media__link" href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <main class="section">
+      <div class="container">
+        <!--FilterSection-->
+        <div>
+          <ul class="filter-menu unstyled-list">
+            <div class="filter-menu--mobile">
+            <li>
+              <button class="filter-menu__button" type="button">All</button>
+            </li>
+            <li>
+              <button class="filter-menu__button" type="button">
+                Web-sites
+              </button>
+            </li>
+            <li>
+              <button class="filter-menu__button" type="button">
+                Apps
+              </button>
+            </li>
+            </div>
+            <div class="filter-menu--mobile">
+            <li>
+              <button class="filter-menu__button" type="button">
+                Design
+              </button>
+            </li>
+            <li>
+              <button class="filter-menu__button" type="button">
+                Marketing
+              </button>
+            </li>
+            </div>
+          </ul>
+        </div>
+        <!--PortofolioSection-->
+        <div class="portfolio">
+          <ul class="cards-list unstyled-list">
+            <li class="cards-list__item">
+              <div class="overlay-container">
+                <picture>
+                <source media="screen and (max-width: 767px)" srcset="images/portfolio1-M.jpg 1x, images/portfolio1-M@2x.jpg 2x">
+                <source media="screen and (min-width: 768px) and (max-width: 1199px)" srcset="images/portfolio1-T.jpg 1x, images/portfolio1-T@2x.jpg 2x">
+                <source media="screen and (min-width: 1200px)" srcset="images/portfolio1-D.jpg 1x, images/portfolio1-D@2x.jpg 2x">
+                            
+               
+                <img             
+                src="images/portfolio1-M.jpg"
+                alt="Technoduck"               
+              />
+               </picture>
+                
+                <div class="overlay-container__item">
+                  <p class="overlay-container__text">
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
+                  </p>
+                </div>
+              </div>
+              <div class="cards-list__description">
+                <h2 class="cards-list__title">Technoduck</h2>
+                <p class="cards-list__type">Web-site</p>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="overlay-container">
+                 <picture>
+                <source media="screen and (max-width: 767px)" srcset="images/portfolio2-M.jpg 1x, images/portfolio2-M@2x.jpg 2x">
+                <source media="screen and (min-width: 768px) and (max-width: 1199px)" srcset="images/portfolio2-T.jpg 1x, images/portfolio2-T@2x.jpg 2x">
+                <source media="screen and (min-width: 1200px)" srcset="images/portfolio2-D.jpg 1x, images/portfolio2-D@2x.jpg 2x">
+                            
+               
+                <img             
+                src="images/portfolio2-M.jpg"
+                alt="Poster New Orlean vs Golden Star"               
+              />
+               </picture>
+                
+                <div class="overlay-container__item"></div>
+              </div>
+              <div class="cards-list__description">
+                <h2 class="cards-list__title">Poster New Orlean vs Golden Star</h2>
+                <p class="cards-list__type">Design</p>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="overlay-container">
+                <picture>
+                <source media="screen and (max-width: 767px)" srcset="images/portfolio3-M.jpg 1x, images/portfolio3-M@2x.jpg 2x">
+                <source media="screen and (min-width: 768px) and (max-width: 1199px)" srcset="images/portfolio3-T.jpg 1x, images/portfolio3-T@2x.jpg 2x">
+                <source media="screen and (min-width: 1200px)" srcset="images/portfolio3-D.jpg 1x, images/portfolio3-D@2x.jpg 2x">
+                            
+               
+                <img             
+                src="images/portfolio3-M.jpg"
+                alt="Seafood Restaurant"               
+              />
+               </picture>
+                
+                <div class="overlay-container__item"></div>
+              </div>
+              <div class="cards-list__description">
+                <h2 class="cards-list__title">Seafood Restaurant</h2>
+                <p class="cards-list__type">Apps</p>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="overlay-container">
+                 <picture>
+                <source media="screen and (max-width: 767px)" srcset="images/portfolio4-M.jpg 1x, images/portfolio4-M@2x.jpg 2x">
+                <source media="screen and (min-width: 768px) and (max-width: 1199px)" srcset="images/portfolio4-T.jpg 1x, images/portfolio4-T@2x.jpg 2x">
+                <source media="screen and (min-width: 1200px)" srcset="images/portfolio4-D.jpg 1x, images/portfolio4-D@2x.jpg 2x">
+                            
+               
+                <img             
+                src="images/portfolio4-M.jpg"
+                alt="Headphones Project Prime"               
+              />
+               </picture>
+                
+                <div class="overlay-container__item"></div>
+              </div>
+              <div class="cards-list__description">
+                <h2 class="cards-list__title">Project Prime</h2>
+                <p class="cards-list__type">Marketing</p>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="overlay-container">
+                 <picture>
+                <source media="screen and (max-width: 767px)" srcset="images/portfolio5-M.jpg 1x, images/portfolio5-M@2x.jpg 2x">
+                <source media="screen and (min-width: 768px) and (max-width: 1199px)" srcset="images/portfolio5-T.jpg 1x, images/portfolio5-T@2x.jpg 2x">
+                <source media="screen and (min-width: 1200px)" srcset="images/portfolio5-D.jpg 1x, images/portfolio5-D@2x.jpg 2x">
+                            
+               
+                <img             
+                src="images/portfolio5-M.jpg"
+                alt="Project Boxes"               
+              />
+               </picture>
+                
+                <div class="overlay-container__item"></div>
+              </div>
+              <div class="cards-list__description">
+                <h2 class="cards-list__title">Project Boxes</h2>
+                <p class="cards-list__type">Apps</p>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="overlay-container">
+                 <picture>
+                <source media="screen and (max-width: 767px)" srcset="images/portfolio6-M.jpg 1x, images/portfolio6-M@2x.jpg 2x">
+                <source media="screen and (min-width: 768px) and (max-width: 1199px)" srcset="images/portfolio6-T.jpg 1x, images/portfolio6-T@2x.jpg 2x">
+                <source media="screen and (min-width: 1200px)" srcset="images/portfolio6-D.jpg 1x, images/portfolio6-D@2x.jpg 2x">
+                            
+               
+                <img             
+                src="images/portfolio6-M.jpg"
+                alt="Inspiration has no Borders"               
+              />
+               </picture>
+                
+                <div class="overlay-container__item"></div>
+              </div>
+              <div class="cards-list__description">
+                <h2 class="cards-list__title">Inspiration has no Borders</h2>
+                <p class="cards-list__type">Web-site</p>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="overlay-container">
+                <picture>
+                <source media="screen and (max-width: 767px)" srcset="images/portfolio7-M.jpg 1x, images/portfolio7-M@2x.jpg 2x">
+                <source media="screen and (min-width: 768px) and (max-width: 1199px)" srcset="images/portfolio7-T.jpg 1x, images/portfolio7-T@2x.jpg 2x">
+                <source media="screen and (min-width: 1200px)" srcset="images/portfolio7-D.jpg 1x, images/portfolio7-D@2x.jpg 2x">
+                            
+               
+                <img             
+                src="images/portfolio7-M.jpg"
+                alt="Limited Edition"               
+              />
+               </picture>
+                
+                <div class="overlay-container__item"></div>
+              </div>
+              <div class="cards-list__description">
+                <h2 class="cards-list__title">Limited Edition</h2>
+                <p class="cards-list__type">Design</p>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="overlay-container">
+                <picture>
+                <source media="screen and (max-width: 767px)" srcset="images/portfolio8-M.jpg 1x, images/portfolio8-M@2x.jpg 2x">
+                <source media="screen and (min-width: 768px) and (max-width: 1199px)" srcset="images/portfolio8-T.jpg 1x, images/portfolio8-T@2x.jpg 2x">
+                <source media="screen and (min-width: 1200px)" srcset="images/portfolio8-D.jpg 1x, images/portfolio8-D@2x.jpg 2x">
+                            
+               
+                <img             
+                src="images/portfolio8-M.jpg"
+                alt="Label Tag"               
+              />
+               </picture>
+                
+                <div class="overlay-container__item"></div>
+              </div>
+              <div class="cards-list__description">
+                <h2 class="cards-list__title">Project LAB</h2>
+                <p class="cards-list__type">Marketing</p>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="overlay-container">
+                 <picture>
+                <source media="screen and (max-width: 767px)" srcset="images/portfolio9-M.jpg 1x, images/portfolio9-M@2x.jpg 2x">
+                <source media="screen and (min-width: 768px) and (max-width: 1199px)" srcset="images/portfolio9-T.jpg 1x, images/portfolio9-T@2x.jpg 2x">
+                <source media="screen and (min-width: 1200px)" srcset="images/portfolio9-D.jpg 1x, images/portfolio9-D@2x.jpg 2x">
+                            
+               
+                <img             
+                src="images/portfolio9-M.jpg"
+                alt="Growing Business"               
+              />
+               </picture>
+                
+                <div class="overlay-container__item"></div>
+              </div>
+              <div class="cards-list__description">
+                <h2 class="cards-list__title">Growing Business</h2>
+                <p class="cards-list__type">Apps</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <!--FooterSection-->
+    <footer class="page-footer">
+      <div class="container page-footer__container">
+        <div class="page-footer__tablet">
+        <div class="page-footer__address">
+          <div class="page-footer__logo">
+            <a class="logo logo--color" href="#"
+              ><span class="logo__section">Web</span>Studio</a
+            >
+          </div>
+          <address>
+            <ul class="unstyled-list adress-section">
+              <li>
+                <a
+                  class="adress-section__item adress-section__item--color"
+                  href="#"
+                  >695 Park Ave, NY 10065, USA</a
+                >
+              </li>
+              <li>
+                <a class="adress-section__item" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="adress-section__item" href="tel:12127724150"
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="page-social-media">
+          <h2 hidden></h2>
+          <h3 class="page-social-media__title">Find us on</h3>
+          <ul class="unstyled-list social-media">
+            <li class="social-media__item">
+              <svg width="20px" height="20px" class="social-media__icon">
+                <a href="#">
+                  <use href="./images/icons.svg.svg#icon-instagram" class="social-media__footer"></use>
+                </a>
+              </svg>
+            </li>
+            <li class="social-media__item">
+              <svg width="20px" height="20px" class="social-media__icon">
+                <a href="#">
+                  <use href="./images/icons.svg.svg#icon-twitter"  class="social-media__footer"></use>
+                </a>
+              </svg>
+            </li>
+            <li class="social-media__item">
+              <svg width="20px" height="20px class="social-media__icon">
+                <a href="#">
+                  <use href="./images/icons.svg.svg#icon-facebook"  class="social-media__footer"></use>
+                </a>
+              </svg>
+            </li>
+            <li class="social-media__item">
+              <svg width="20px" height="20px" class="social-media__icon">
+                <a href="#">
+                  <use href="./images/icons.svg.svg#icon-linkedin"  class="social-media__footer"></use>
+                </a>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        </div>
+
+        <form name="subscribe-form" class="footer-form">
+          <label for="email-subscription" class="footer-form__label"
+            >Subscribe to the newsletter
+          </label>
+          <div class="footer-form__input-container">
+            <input
+              type="email"
+              id="email-subscription"
+              placeholder="E-mail"
+              name="email-subscription"
+              class="footer-form__input"
+            />
+            <button type="submit" class="footer-form__button">
+              Subscribe
+              <svg width="24px" height="24px">
+                <use
+                  href="./images/icons.svg.svg#icon-footer-send-button"
+                ></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
